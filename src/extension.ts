@@ -104,6 +104,9 @@ export function activate(context: ExtensionContext) {
       case 'win32':
         openCommand = 'start ';
         break;
+      case 'linux':
+      	openCommand = 'xdg-open ';
+      	break;
       default:
         return;
     }
